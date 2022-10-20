@@ -9,9 +9,6 @@ class StateController extends Controller {
     if($newReservation)
     return ('Reservation Successful! Please print out your downloadable ticket');
 
-    public function store(Request $request) {
-        dd($table)
-    }
 
     function store(Request $request){
         $newReservation = new Reservation;
