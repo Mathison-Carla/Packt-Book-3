@@ -4,17 +4,18 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 class StateController extends Controller {
 
-    // return StateController::orderBy()('available_seats')--> get();
-//    return Route::view('/welcome.blade.php', 'index');
 
    public function add($id){
     if($newReservation)
-    return ('Reservation Successful! Plase print out your downloadable ticket');
+    return ('Reservation Successful! Please print out your downloadable ticket');
 
+    public function store(Request $request) {
+        dd($table)
+    }
 
     function store(Request $request){
         $newReservation = new Reservation;
-        // $newReservation-->add($request('addNew'))
+        
         return $newReservation;
     }
    }
@@ -22,12 +23,3 @@ class StateController extends Controller {
     
 
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-   
-    
