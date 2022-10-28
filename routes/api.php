@@ -9,10 +9,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get("/states" , [StateController::class, "index"]);
-Route::get('/views/Alabama', function () {
-    return redirect('/views/Wisconsin');
-
-});
- 
+Route::post('login', [app\Http\API\UserController::class, 'login'])
+Route::post('register', [app\Http\API\UserController::class, 'register'])
+Route::post('logout', [app\Http\API\UserController::class, 'logout'])
 ?>
