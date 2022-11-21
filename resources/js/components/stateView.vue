@@ -19,7 +19,7 @@ export default {
         Nebraska,
         Alabama,
         NewYork,
-        Conetticut,
+        Conneticut,
     }
 
 }

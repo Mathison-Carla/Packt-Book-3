@@ -1,11 +1,9 @@
 <template>
+  <div>Test</div>
+</template>
+  
+  <script>export default {
 
-
-    <div id="nav">
-     
-    </div>
-   
-  </template>
-  <style>
-  </style> 
-
+    
+  }
+  </script>

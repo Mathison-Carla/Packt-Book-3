@@ -9,7 +9,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('login', [app\Http\API\UserController::class, 'login'])
-Route::post('register', [app\Http\API\UserController::class, 'register'])
-Route::post('logout', [app\Http\API\UserController::class, 'logout'])
+Route::post('login', [\API\UserController::class, 'login']);
+Route::post('register', [\API\UserController::class, 'register']);
+Route::post('logout', [\API\UserController::class, 'logout'])->middleware('auth:sanctum');
+Route::get('state', [\API\StateController::class, 'state']);
+
+
 ?>
