@@ -22,7 +22,7 @@
           <b-form-checkbox-group
             v-model="form.checked"
             id="checkboxes-4"
-            :aria-describedby="ariaDescribedby"
+            :aria-describedby="ariaDescribedby"></b-form-checkbox-group>
     
         <b-button type="submit" variant="primary">Submit</b-button>
         <b-button type="reset" variant="danger">Reset</b-button>
@@ -55,5 +55,11 @@ export default {
 
     }}
 }
+
+export default {
+        mounted() {
+            console.log('Component mounted.')
+        }
+    }
 
 </script>

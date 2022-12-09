@@ -2,7 +2,7 @@
 import './bootstrap';
 import { createApp } from 'vue';
 import axios from 'axios';
-import index from './js/index.js'
+import router from './router/index.js'
 
 Vue.use(VueRouter)
 

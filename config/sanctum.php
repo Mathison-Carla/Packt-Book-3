@@ -1,13 +1,11 @@
 <?php
 
-use Laravel\Sanctum\Sanctum;
-
 use Laravel\Sanctum\HasApiTokens;
- 
-class User extends Authenticatable
-{
-    use HasApiTokens, HasFactory, Notifiable;
-}
+use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\ValidationException;
+
 
 return [
 
@@ -67,5 +65,3 @@ return [
     ],
 
 ];
-
-

@@ -1,3 +1,6 @@
+<!-- loads product view and lists states, displays components -->
+
+
 <template>
     
     <div class="listSeats"></div>
@@ -20,8 +23,25 @@ export default {
         Alabama,
         NewYork,
         Conneticut,
-    }
+    }};
+
+{
+function listSeats()  {
+
+    axios.get(app/Products, {
+        params: this.selected, 'time'
+
+    })
+
+        .then((response)=> {
+
+            this.products = response.data.data;
+            this.loading = false 
+        })
+
 
 }
+} 
+
 
 </script>

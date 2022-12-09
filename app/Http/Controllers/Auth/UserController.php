@@ -8,7 +8,6 @@ use app\User;
 
 class UserController extends Controller
 
-
 {
     
     
@@ -16,8 +15,8 @@ class UserController extends Controller
 
             {
             
-                $user = new User 
-                $user->name = $request->name,
+                $user = new User;
+                $user->name = $request->name
                 $user->email = $request->email
                 $user->password = Hash::make($request->password);
                 $user->save():

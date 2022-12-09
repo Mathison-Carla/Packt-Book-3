@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95b694b18e97667437a84c0f7c711826",
+    "content-hash": "b38d3ddda797166f351381715aa0ca7b",
     "packages": [
         {
             "name": "brick/math",
@@ -61,6 +61,59 @@
                 }
             ],
             "time": "2022-08-10T22:54:19+00:00"
+        },
+        {
+            "name": "constructrcms/constructrcms",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phaziz/Constructr.git",
+                "reference": "125742855a80cd28e382a02e3fbe1965643599b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phaziz/Constructr/zipball/125742855a80cd28e382a02e3fbe1965643599b7",
+                "reference": "125742855a80cd28e382a02e3fbe1965643599b7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "ext-mcrypt": "Required for HTTP cookie encryption"
+            },
+            "default-branch": true,
+            "type": "cms",
+            "autoload": {
+                "files": [
+                    "index.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "DO THE FUCK WHAT YOU WANT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Becher",
+                    "email": "phaziz@gmail.com",
+                    "homepage": "http://www.phaziz.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Constructr CMS - ConstructrCMS based on Slim-PHP5-Framework, Twitter Bootstrap, PDO (MySQL), jQuery/Javascript",
+            "homepage": "https://github.com/phaziz/Constructr",
+            "keywords": [
+                "constructr",
+                "constructrcms",
+                "phaziz"
+            ],
+            "support": {
+                "issues": "https://github.com/phaziz/Constructr/issues",
+                "source": "https://github.com/phaziz/Constructr",
+                "wiki": "https://github.com/phaziz/Constructr/wiki"
+            },
+            "time": "2014-08-14T00:00:00+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -432,6 +485,67 @@
                 }
             ],
             "time": "2022-06-18T20:57:19+00:00"
+        },
+        {
+            "name": "faapz/pdo",
+            "version": "v2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FaaPz/PDO.git",
+                "reference": "d1de9b42b3d11188886055d93a2d68cc2765fa10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FaaPz/PDO/zipball/d1de9b42b3d11188886055d93a2d68cc2765fa10",
+                "reference": "d1de9b42b3d11188886055d93a2d68cc2765fa10",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "phan/phan": "^5",
+                "phpunit/phpunit": "^8",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FaaPz\\PDO\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabian de Laender",
+                    "email": "fabian@faapz.productions",
+                    "homepage": "https://faapz.productions",
+                    "role": "Owner"
+                },
+                {
+                    "name": "Alexander Barker",
+                    "email": "alex@1stleg.com",
+                    "homepage": "https://github.com/kwhat/",
+                    "role": "Collaborator"
+                }
+            ],
+            "description": "Just another PDO database library",
+            "homepage": "https://github.com/FaaPz/PDO",
+            "keywords": [
+                "database",
+                "pdo",
+                "sql"
+            ],
+            "support": {
+                "docs": "https://github.com/FaaPz/PDO/blob/master/docs/README.md",
+                "issues": "https://github.com/FaaPz/PDO/issues",
+                "source": "https://github.com/FaaPz/PDO/tree/v2.2.1"
+            },
+            "time": "2022-08-11T01:08:08+00:00"
         },
         {
             "name": "fruitcake/php-cors",
@@ -1655,6 +1769,53 @@
                 }
             ],
             "time": "2022-04-17T13:12:02+00:00"
+        },
+        {
+            "name": "leeqvip/database",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leeqvip/database.git",
+                "reference": "89163d740a99aa76a9683e1cddce02da66f5ff0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leeqvip/database/zipball/89163d740a99aa76a9683e1cddce02da66f5ff0b",
+                "reference": "89163d740a99aa76a9683e1cddce02da66f5ff0b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leeqvip\\Database\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "leeqvip",
+                    "email": "leeqvip@gmail.com"
+                }
+            ],
+            "description": "PDO database library",
+            "keywords": [
+                "database",
+                "framework",
+                "orm",
+                "pdo"
+            ],
+            "support": {
+                "issues": "https://github.com/leeqvip/database/issues",
+                "source": "https://github.com/leeqvip/database/tree/v1.0.0"
+            },
+            "time": "2022-10-23T10:12:07+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -7976,7 +8137,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "constructrcms/constructrcms": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
