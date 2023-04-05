@@ -3,6 +3,8 @@ import './bootstrap';
 import { createApp } from 'vue';
 import axios from 'axios';
 import router from './router/index.js'
+import Alabama from "./components/Alabama.vue";
+import NewYork from "./components/NewYork.vue";
 
 Vue.use(VueRouter)
 
@@ -15,10 +17,10 @@ const routes = [
 ]
 
 app.component('alabama', Alabama);
+app.component('newyork', NewYork);
 app.component('index', index)
 
-app.config.globalProperties.$axios=axios 
-app.mount('#app');
+app.config.globalProperties.$axios=axios
 
 const App = createApp({
     components: {
@@ -33,7 +35,8 @@ const App = createApp({
     }
 });
 
-mount('#app')
+
+app.mount('#app');
 
 
 

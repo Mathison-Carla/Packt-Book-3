@@ -1,34 +1,27 @@
 
-<html>
+<html lang="en">
 
     <head>
+        <title>Welcome view</title>
         @vite('./resources/js/app.js')
     
     </head>
     <body>
-        <div id="app"> 
-            <a href="./resources/js/components/alabama.blade.php">Alabama</a>
+        <div id="app">
+
+            <router-link to="./js/components/App.vue"></router-link>
+            <router-link to="./js/components/Home.vue"></router-link>
 
 
-@component
-<router-link to="./js/components/App.vue"></router-link>
-<router-link to="./js/components/Home.vue"></router-link>
-@endcomponent 
 
 
-@component
-<router-link to="./js/components/Dashboard.vue"></router-link>
-@endcomponent
+            <router-link to="./js/components/Dashboard.vue"></router-link>
 
-@component
-<router-link to="./js/components/Search.vue"></router-link>
-@endcomponent
 
+
+            <router-link to="./js/components/Search.vue"></router-link>
 
         </div>
     </body>
-
-
-    <script src='./js/app.js'></script>
 </html>
 

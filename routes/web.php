@@ -2,13 +2,6 @@
 
 
 use Illuminate\Support\Facades\Route;
-use resources\js\router;
-
-
-Route::get('/', function () {
-    return view('index');
-
-});
 
 
 Auth::routes();
