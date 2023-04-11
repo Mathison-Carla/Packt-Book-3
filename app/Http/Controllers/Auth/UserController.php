@@ -2,26 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
-use app\User;
 
 class UserController extends Controller
 
 {
-    
-    
+
+
     public function register(Request $request)
 
             {
-            
+
                 $user = new User;
                 $user->name = $request->name
                 $user->email = $request->email
                 $user->password = Hash::make($request->password);
                 $user->save():
 
-                
+
 
                 $success = true
                 $messsage = "User registered successfully"
@@ -29,14 +28,14 @@ class UserController extends Controller
                $success = false
                $message = $ex->getMessage()
             },
-    
+
     public function login(Request $request)
 
 {
     $credentials = [
         'email' => $request->email,
         'password' => $request->password
-    
+
     ];
 
     if (Auth::attempt($credentials)) {
@@ -53,10 +52,10 @@ class UserController extends Controller
     'message' => $message
     ];
 
-    return response()->json($response) 
+    return response()->json($response)
 
 },
-    
+
 
 public function logout()
  {
@@ -69,7 +68,7 @@ public function logout()
         $success = false;
         $message = $ex->getMessage();
     }
-    
+
     return response()->json($response);
  }}
 

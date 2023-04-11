@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Seats;
 use Illuminate\Database\Seeder;
 
 class SeatsSeeder extends Seeder
@@ -14,6 +14,17 @@ class SeatsSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $seat = [
+            ['seat_number' => \Str::random(4)],
+            ['seat_number' => \Str::random(4)],
+            ['seat_number' => \Str::random(4)],
+            ['seat_number' => \Str::random(4)],
+            ['seat_number' => \Str::random(4)],
+            ['seat_number' => \Str::random(4)],
+            ['seat_number' => \Str::random(4)],
+            ['seat_number' => \Str::random(4)],
+        ];
+
+        Seats::insert($seat);
     }
 }

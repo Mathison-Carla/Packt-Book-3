@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Booking;
 use Illuminate\Database\Seeder;
 
 class BookingSeeder extends Seeder
@@ -12,8 +12,17 @@ class BookingSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
-        //
+        $bookings = [
+            ['order_id' => \Str::random(9)],
+            ['order_id' => \Str::random(9)],
+            ['order_id' => \Str::random(9)],
+            ['order_id' => \Str::random(9)],
+            ['order_id' => \Str::random(9)],
+            ['order_id' => \Str::random(9)],
+        ];
+
+        Booking::insert($bookings);
     }
 }
