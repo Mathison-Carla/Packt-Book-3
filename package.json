@@ -12,7 +12,8 @@
         "vue": "^3.2.38",
         "vue-loader": "^17.0.1",
         "vue-router": "^4.0.13",
-        "vuex": "^4.1.0"
+        "vuex": "^4.1.0",
+        "vuex-persistedstate": "^4.1.0"
     },
     "devDependencies": {
         "@popperjs/core": "^2.10.2",

@@ -14,6 +14,9 @@
                         <li class="nav-item">
                             <router-link to="/login" class="nav-link">Login </router-link>
                         </li>
+                        <li class="nav-item">
+                            <router-link to="/flight/index" class="nav-link">Flights </router-link>
+                        </li>
                     </ul>
                     <div class="d-flex">
                         <ul class="navbar-nav">
