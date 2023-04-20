@@ -14,6 +14,10 @@ const routes = [
         name: 'home',
         path: '/',
         component: Home,
+        meta: {
+            middleware: "auth",
+            title: `Home`
+        }
     },
     {
         name: 'register',
@@ -38,8 +42,9 @@ const routes = [
         path: '/dashboard',
         component: Dashboard,
         meta: {
-            middleware: "auth"
-        },
+            middleware: "auth",
+            title: `Dashboard`
+        }
     },
     {
         name: 'forgot',
