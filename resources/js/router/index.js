@@ -42,7 +42,7 @@ const routes = [
         path: '/dashboard',
         component: Dashboard,
         meta: {
-            middleware: "auth",
+            middleware: "guest",
             title: `Dashboard`
         }
     },

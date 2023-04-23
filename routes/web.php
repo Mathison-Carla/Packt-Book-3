@@ -4,11 +4,11 @@
 use Illuminate\Support\Facades\Route;
 
 
-//Auth::routes();
-
-Route::get('/', function () {
+Route::get('{any}', function () {
     return view('welcome');
-});
+})->where('any', '.*');
+
+Auth::routes();
 
 //Route::get('/dashboard', function () {
 //    return view('dashboard');

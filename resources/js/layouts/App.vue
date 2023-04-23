@@ -9,10 +9,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <router-link to="/" class="nav-link">Home <span class="sr-only">(current)</span></router-link>
-                        </li>
-                        <li class="nav-item">
-                            <router-link to="/login" class="nav-link">Login </router-link>
+                            <router-link to="/dashboard" class="nav-link">Dashboard</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link to="/flight/index" class="nav-link">Book a Flights </router-link>
@@ -20,6 +17,12 @@
                     </ul>
                     <div class="d-flex">
                         <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarShoppingCart" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa-solid fa-cart-shopping"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarShoppingCart">
+                                    <a class="dropdown-item" href="javascript:void(0)">1 Item</a>
+                                </div>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                    User logged

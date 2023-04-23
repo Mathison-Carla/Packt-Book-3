@@ -1,37 +1,58 @@
 <template>
     <div class="container h-100">
         <div class="row h-100 align-items-center">
-            <div class="col-12 col-md-6 offset-md-3">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/1200px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg" alt="New York">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="https://estatousa.com/wp-content/uploads/2022/08/Alabamas-cities-are-among-the-most-dangerous-in-the-country..jpg" alt="Alabama">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
+            <div class="col-6 col-md-6 offset-md-3">
+                <CCarousel controls indicators>
+                    <CCarouselItem>
+                        <img class="d-block w-100" src="https://estatousa.com/wp-content/uploads/2022/08/Alabamas-cities-are-among-the-most-dangerous-in-the-country..jpg" alt="slide 1"/>
+                        <CCarouselCaption class="d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </CCarouselCaption>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <img class="d-block w-100" src="https://estatousa.com/wp-content/uploads/2022/08/Alabamas-cities-are-among-the-most-dangerous-in-the-country..jpg" alt="slide 2"/>
+                        <CCarouselCaption class="d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </CCarouselCaption>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <img class="d-block w-100" src="https://cdn.mequieroir.com/wp-content/uploads/2020/10/lincoln-scaled.jpg" alt="slide 3"/>
+                        <CCarouselCaption class="d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </CCarouselCaption>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <img class="d-block w-100" src="https://newscdn2.weigelbroadcasting.com/9gxjS-1597770116-172153-blog-Chicago%20credit%20iStock%20and%20dibrova.jpg" alt="slide 3"/>
+                        <CCarouselCaption class="d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </CCarouselCaption>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <img class="d-block w-100" src="https://a.cdn-hotels.com/gdcs/production5/d1311/3af59bd7-0d47-4291-9ba0-c34803de7c54.jpg"/>
+                        <CCarouselCaption class="d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </CCarouselCaption>
+                    </CCarouselItem>
+                </CCarousel>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-export default {
-    name: "Dashboard"
-}
+import {defineComponent} from "vue";
+import {CCarousel, CCarouselItem, CCarouselCaption} from '@coreui/bootstrap-vue';
+
+export default defineComponent({
+    components: {CCarouselItem,CCarousel, CCarouselCaption}
+})
+
+
 </script>
 
 <style scoped>

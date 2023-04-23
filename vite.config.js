@@ -4,6 +4,9 @@ import vue from '@vitejs/plugin-vue';
 import path from 'path';
 
 export default defineConfig({
+    css: {
+        devSourcemap: true,
+    },
     plugins: [
         vue(),
         laravel({
