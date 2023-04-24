@@ -8,6 +8,7 @@ import Forgot from "../pages/ForgotPassword.vue";
 import FlightIndex from "../components/flights/FlightIndex.vue";
 import FlightCreate from "../components/flights/FlightCreate.vue";
 import FlightEdit from "../components/flights/FlightEdit.vue";
+import About from "../pages/About.vue";
 
 const routes = [
     {
@@ -19,6 +20,16 @@ const routes = [
             title: `Home`
         }
     },
+    {
+        name: 'about',
+        path: '/about',
+        component: About,
+        meta: {
+            middleware: "guest",
+            title: `Home`
+        }
+    },
+
     {
         name: 'register',
         path: '/register',

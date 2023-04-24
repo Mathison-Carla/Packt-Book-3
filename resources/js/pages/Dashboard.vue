@@ -1,6 +1,42 @@
 <template>
     <div class="container h-100">
         <div class="row h-100 align-items-center">
+            <div class="col-12 cold-md-6 pt-5">
+                <label for="location">Location</label>
+                <select class="form-select" id="location" aria-label="Location">
+                    <option selected>Alabama</option>
+                    <option value="1">New York</option>
+                    <option value="2">Connecticut</option>
+                    <option value="3">Nebraska</option>
+                </select>
+
+                <label for="datetime">Datetime</label>
+                <select class="form-select" id="datetime" aria-label="Datetime">
+                    <option selected>Alabama</option>
+                    <option value="1">New York</option>
+                    <option value="2">Connecticut</option>
+                    <option value="3">Nebraska</option>
+                </select>
+
+                <label for="class">Class</label>
+
+                <select class="form-select" id="class" aria-label="Class">
+                    <option selected>Alabama</option>
+                    <option value="1">New York</option>
+                    <option value="2">Connecticut</option>
+                    <option value="3">Nebraska</option>
+                </select>
+
+                <label for="airport">Airport</label>
+
+                <select class="form-select" id="airport" aria-label="Airport">
+                    <option selected>Alabama</option>
+                    <option value="1">New York</option>
+                    <option value="2">Connecticut</option>
+                    <option value="3">Nebraska</option>
+                </select>
+
+            </div>
             <div class="col-6 col-md-6 offset-md-3">
                 <CCarousel controls indicators>
                     <CCarouselItem>
