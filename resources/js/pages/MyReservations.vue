@@ -1,7 +1,6 @@
 <template>
-
-    <div class="container">
-        <h1>Checkout</h1>
+<!--    <div class="container ">-->
+        <h1 class="mt-5">My Reservations</h1>
         <table class="table">
             <thead>
             <tr>
@@ -17,15 +16,13 @@
             </tbody>
         </table>
         <h3>Total: {{ total }}</h3>
-        <button @click="placeOrder" class="btn btn-primary">Place Order</button>
-    </div>
 
+<!--    </div>-->
 </template>
 
 <script>
-
 export default {
-    name: "Checkout",
+    name: "MyReservations",
     data() {
         return {
             reservedSeats: [
@@ -40,11 +37,8 @@ export default {
 
     },
     methods:{
-        placeOrder()
-        {
-
-            alert("An email will be sent to your account shortly with your flight information and our cancellation policy");
-            this.$router.push('dashboard');
+        placeOrder(){
+            alert("Order Placed");
         }
     }
 }

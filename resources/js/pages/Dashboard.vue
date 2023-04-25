@@ -1,5 +1,5 @@
 <template>
-    <div class="container h-100">
+
         <div class="row h-100 align-items-center">
             <div class="col-6 col-md-6 offset-md-3">
                 <CCarousel controls indicators>
@@ -41,7 +41,7 @@
                 </CCarousel>
             </div>
         </div>
-    </div>
+
 </template>
 
 <script>

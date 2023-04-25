@@ -11,6 +11,7 @@ import FlightEdit from "../components/flights/FlightEdit.vue";
 import About from "../pages/About.vue";
 import Seats from "../pages/Seats.vue";
 import Checkout from "../pages/Checkout.vue";
+import MyReservations from "../pages/MyReservations.vue";
 
 const routes = [
     {
@@ -114,6 +115,16 @@ const routes = [
         meta: {
             middleware: "guest",
             title: `Checkout`
+        }
+    },
+    {
+        name: 'my-reservation',
+        path: '/my-reservation',
+        component: MyReservations,
+        props: true,
+        meta: {
+            middleware: "guest",
+            title: `My reservations`
         }
     }
 ];

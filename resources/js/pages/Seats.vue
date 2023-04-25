@@ -72,7 +72,6 @@ export default {
             axios.get('/api/seats')
                 .then(response => {
                     console.log("En fetch seats");
-                    console.dir(response.data);
                     this.seats = response.data;
                 });
         },
