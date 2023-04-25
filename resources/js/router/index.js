@@ -9,6 +9,8 @@ import FlightIndex from "../components/flights/FlightIndex.vue";
 import FlightCreate from "../components/flights/FlightCreate.vue";
 import FlightEdit from "../components/flights/FlightEdit.vue";
 import About from "../pages/About.vue";
+import Seats from "../pages/Seats.vue";
+import Checkout from "../pages/Checkout.vue";
 
 const routes = [
     {
@@ -92,6 +94,26 @@ const routes = [
         meta: {
             middleware: "guest",
             title: `Fligh Edit`
+        }
+    },
+    {
+        name: 'seats',
+        path: '/seat/book',
+        component: Seats,
+        props: true,
+        meta: {
+            middleware: "guest",
+            title: `Book a flight`
+        }
+    },
+    {
+        name: 'checkout',
+        path: '/checkout',
+        component: Checkout,
+        props: true,
+        meta: {
+            middleware: "guest",
+            title: `Checkout`
         }
     }
 ];

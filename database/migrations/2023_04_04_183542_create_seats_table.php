@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('seats', function (Blueprint $table) {
             $table->id();
             $table->string('seat_number');
+            $table->decimal('price',10,2);
+            $table->boolean('reserved')->default(false);
             $table->foreignId('flight_id')->references('id')->on('flights');
             $table->timestamps();
         });

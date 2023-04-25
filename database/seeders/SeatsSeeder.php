@@ -16,14 +16,19 @@ class SeatsSeeder extends Seeder
     public function run()
     {
         $seat = [
-            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4)],
-            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4)],
-            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4)],
-            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4)],
-            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4)],
-            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4)],
-            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4)],
-            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4)],
+            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4),'price'=>random_int(3,4)],
+            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4),'price'=>random_int(3,4)],
+            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4),'price'=>random_int(3,4)],
+            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4),'price'=>random_int(3,4)],
+            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4),'price'=>random_int(3,4)],
+            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4),'price'=>random_int(3,4)],
+            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4),'price'=>random_int(3,4)],
+            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4),'price'=>random_int(3,4)],
+            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4),'price'=>random_int(3,4)],
+            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4),'price'=>random_int(3,4)],
+            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4),'price'=>random_int(3,4)],
+            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4),'price'=>random_int(3,4)],
+            ['seat_number' => \Str::random(4),'flight_id'=>random_int(1,4),'price'=>random_int(3,4)],
         ];
 
         Seats::insert($seat);

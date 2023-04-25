@@ -2,10 +2,10 @@
 
 
 <template>
-    
+
     <div class="listSeats"></div>
     <div class="heading"></div>
-        <h2>Select a state to travel to and book your flight!</h2>
+            <h2>Select a state to travel to and book your flight!</h2>
     <div class="listSeats"></div>
     <input type="selection" v-model="dropdownSelection" />
 
@@ -36,12 +36,12 @@ function listSeats()  {
         .then((response)=> {
 
             this.products = response.data.data;
-            this.loading = false 
+            this.loading = false
         })
 
 
 }
-} 
+}
 
 
 </script>

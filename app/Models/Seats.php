@@ -8,7 +8,7 @@ class Seats extends Model
 {
     protected $table = 'seats';
 
-    protected $fillable = ['seat_number','flight_id'];
+    protected $fillable = ['seat_number','flight_id','price','reserved'];
 
     public function flight(): BelongsTo
     {

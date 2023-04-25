@@ -15,7 +15,10 @@
                             <router-link to="/about" class="nav-link">About Us</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link to="/flight/index" class="nav-link">Book a Flights </router-link>
+                            <router-link to="/seat/book" class="nav-link">Book a Flights </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/flight/index" class="nav-link">Flights List </router-link>
                         </li>
                     </ul>
                     <div class="d-flex">
@@ -23,7 +26,7 @@
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" id="navbarShoppingCart" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa-solid fa-cart-shopping"></i></a>
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarShoppingCart">
-                                    <a class="dropdown-item" href="javascript:void(0)">1 Item</a>
+                                    <a class="dropdown-item" href="/checkout">1 Item</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
