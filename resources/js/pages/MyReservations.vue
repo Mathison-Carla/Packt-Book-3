@@ -6,12 +6,16 @@
             <tr>
                 <th>Seat Number</th>
                 <th>Price</th>
+                <th>Action</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="seat in reservedSeats" :key="seat.id">
                 <td>{{ seat.seat_number }}</td>
                 <td>{{ seat.price }}</td>
+                <td>
+                    <button @click="cancelOrder(seat.id)" class="btn btn-sm btn-danger">Cancel Order</button>
+                </td>
             </tr>
             </tbody>
         </table>
@@ -37,8 +41,9 @@ export default {
 
     },
     methods:{
-        placeOrder(){
-            alert("Order Placed");
+        cancelOrder(){
+            alert("Do you really wish to cancel your reservation?");
+            this.$router.push('dashboard');
         }
     }
 }
